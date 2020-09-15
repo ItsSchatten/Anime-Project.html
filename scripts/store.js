@@ -1,26 +1,26 @@
-
-
 var images = ['merchimages/DemonSlayerPoster.jpg', 'merchimages/AkameGaKillPoster.jpg', 'merchimages/DarlingintheFranxxPoster.jpg', 'merchimages/AngelsofDeathPoster.jpg', 'merchimages/ServampPoster.jpg', 'merchimages/OwarinoseraphPoster.jpg']; // array of pictures
 var stop = '0';
 var sent = true;
 
-while (sent) {
-    var input = prompt('Give a number 1 through 6. Type 0 to exit.');
+function getInput() {
+    while (sent) {
+        var input = prompt('Give a number 1 through 6. Type 0 to exit.');
 
-    if (input === stop) {
-        console.log("Received the stop input, just showing the user the site.")
-        sent = false;
-        break;
-    }
-    else {
-        if (!isNaN(input) && images.length >= input) {
-            showImage("merchimages/DemonSlayerPoster.jpg", input, "Some random image that I know nothing about!");
+        if (input === stop) {
+            console.log("Received the stop input, just showing the user the site.")
+            sent = false;
+            break;
         }
-        sent = false;
+        else {
+            if (!isNaN(input) && images.length >= input) {
+                showImage(input);
+            }
+            sent = false;
+        }
     }
-}
 
-function showImage(image, input) {
+}
+function showImage(input) {
     var path = document.getElementById("storePage");
 
     console.log(input + " was the input we received.")
@@ -35,7 +35,13 @@ function showImage(image, input) {
 }
 
 function reloadStore() {
-    console.log(document.getElementById("storePage").childNodes);
+
+    while (document.getElementById("storePage").firstChild) {
+        document.getElementById("storePage").removeChild(document.getElementById("storePage").firstChild)
+    }
 
     sent = true;
+    getInput();
 }
+
+getInput();
