@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>HTML demo</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
+
 <body>
     <header>
         <h1>Anime Selections!</h1>
@@ -15,34 +17,42 @@
                 <a href="index_PageTwo.html">Index Page Two</a>
                 <a href="https://github.com/adard2002/DISCUSSION_04.html">GitHub Page</a>
                 <a href="https://www.crunchyroll.com/">Crunchyroll</a>
-                <a href="/store.html">Store</a>
+                <a href="store.html">Store</a>
             </ul>
         </nav>
-    </header>    
-        <!-- Merch Slideshow -->
-        <!-- <img src="http://placehold.it/960x454"> -->
-        <main>
-            <h2>Anime Merch</h2>
-                <ul>
-                    <li><img class="animeMerchSize" src="merchimages/DemonSlayerPoster.jpg" alt="Demon Slayer" ></li>
-                    <li><img class="animeMerchSize" src="merchimages/AkameGaKillPoster.jpg" alt="Akame Ga Kill" ></li>
-                    <li><img class="animeMerchSize" src="merchimages/DarlingintheFranxxPoster.jpg" alt="Darling in the Franxx" ></li>
-                    <li><img class="animeMerchSize" src="merchimages/AngelsofDeathPoster.jpg" alt="Angels Of Death" ></li>
-                    <li><img class="animeMerchSize" src="merchimages/ServampPoster.jpg" alt="Servamp" ></li>
-                    <li><img class="animeMerchSize" src="merchimages/OwarinoseraphPoster.jpg" alt="Owari no Seraph" ></li>
-                </ul>
-            </main>
-    <footer>
-            <p>
-                Name: Adara Townsend<br>
-                Email: <a href="mailto:adard2002@gmail.com">adard2002@gmail.com</a><br>
-                GitHub: <a href="https://github.com/adard2002">https://github.com/adard2002</a> 
-            </p>
-        </footer>
-        <script src="rainbowprogressbar.js"></script>
-        <script src="store.js"></script>
-        <div id="progressbar"></div>
-        <div id="scrollPath"></div>
-    </body>
-</html>
+    </header>
+    <!-- Merch Slideshow -->
+    <!-- <img src="http://placehold.it/960x454"> -->
+    <main>
+        <h2>Anime Merch</h2>
 
+        <button onclick="reloadStore()"> Aye Click me to reload BB</button>
+        <br>
+        <span id="storePage"></span>
+
+        <p>This was all here before I got here man, I don't know what happens.</p>
+
+        <ul>
+            <li><img class="animeMerchSize" src="merchimages/DemonSlayerPoster.jpg" alt="Demon Slayer"></li>
+            <li><img class="animeMerchSize" src="merchimages/AkameGaKillPoster.jpg" alt="Akame Ga Kill"></li>
+            <li><img class="animeMerchSize" src="merchimages/DarlingintheFranxxPoster.jpg" alt="Darling in the Franxx">
+            </li>
+            <li><img class="animeMerchSize" src="merchimages/AngelsofDeathPoster.jpg" alt="Angels Of Death"></li>
+            <li><img class="animeMerchSize" src="merchimages/ServampPoster.jpg" alt="Servamp"></li>
+            <li><img class="animeMerchSize" src="merchimages/OwarinoseraphPoster.jpg" alt="Owari no Seraph"></li>
+        </ul>
+    </main>
+    <footer>
+        <p>
+            Name: Adara Townsend<br>
+            Email: <a href="mailto:adard2002@gmail.com">adard2002@gmail.com</a><br>
+            GitHub: <a href="https://github.com/adard2002">https://github.com/adard2002</a>
+        </p>
+    </footer>
+    <script src="scripts/rainbowprogressbar.js"></script>
+    <script src="scripts/store.js"></script>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+</body>
+
+</html>

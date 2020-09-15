@@ -1,123 +1,125 @@
 * {
-    margin: 0;
-    padding: 0;
-    color: #b5bcff;
+  margin: 0;
+  padding: 0;
+  color: #b5bcff;
 }
 
 body {
-    width: 960px;
-    margin: 0 auto;
-    background-image: url(animeimages/purplegalaxy.jpg)
+  width: 960px;
+  margin: 0 auto;
+  background-image: url(../animeimages/purplegalaxy.jpg);
 }
 
-        /*Anime Image Sizes*/
+/*Anime Image Sizes*/
 .animeImageSize {
-    height: 150px;
-    width: 250px;
+  height: 150px;
+  width: 250px;
 }
 
 .animeMerchSize {
   height: 250px;
   width: 150px;
+  padding: 15px;
 }
 
 header {
-    margin-top: 15px;
-    background-color: rgb(107, 116, 201);
-    height: 200px;
-    text-align: center;
+  margin-top: 15px;
+  background-color: rgb(107, 116, 201);
+  height: 200px;
+  text-align: center;
 }
 
 header a {
-    color: #b5bcff;
-    font-size: 24px;
-    padding: 25px;
-    padding-left: 25px;
+  color: #b5bcff;
+  font-size: 24px;
+  padding: 25px;
+  padding-left: 25px;
 }
 
 h1 {
-    padding: 25px;
-    padding-left: 60px;
-    font-size: 60px;
+  padding: 25px;
+  padding-left: 60px;
+  font-size: 60px;
 }
 
-        /*Navigation*/
+/*Navigation*/
 nav {
-    clear: both;
+  clear: both;
 }
 
 nav ul {
-    text-align: center;
+  text-align: center;
 }
 
 nav li {
-    display: inline-block;
-    margin-top: 25px;
-    margin-right: 25px;
-    list-style-type: none;
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 25px;
+  list-style-type: none;
 }
 
-a:link { 
-    text-decoration: none;
+a:link {
+  text-decoration: none;
 }
 
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a:active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 h2 {
-    color: hsl(248, 53%, 58%);
+  color: hsl(248, 53%, 58%);
 }
 
 main {
-    clear: both;
-    text-align: center;
+  clear: both;
+  text-align: center;
 }
 
 main li {
-    list-style-type: none;
-    float: left;
-    margin-top: 30px;
-    margin-right: 30px;
-    margin-bottom: 40px;
-
+  list-style-type: none;
+  float: left;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
 }
 
 main li:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 .addMargin {
-    margin-left: 75px;
+  margin-left: 75px;
 }
 
 main li:nth-child(4) {
-    margin-left: 75px;
+  margin-left: 75px;
 }
 
 #topSpace {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 footer {
-    clear: both;
-    height: 225px;
-    background-color: rgb(107, 116, 201);
-    color: whitesmoke;
-    font-size: 30px;
-    margin-bottom: 50px;
-    text-align: center;
+  clear: both;
+  height: 225px;
+  background-color: rgb(107, 116, 201);
+  color: whitesmoke;
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 /* Slideshow */
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 .slideshow-container {
   max-width: 1000px;
@@ -129,7 +131,8 @@ footer {
   display: none;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -149,8 +152,9 @@ footer {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .text {
@@ -182,7 +186,8 @@ footer {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -194,93 +199,89 @@ footer {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
+/* This is rainbow scroll bar*/
 
-/* This is rainbow scroll bar*/ 
-
-*
-{
+* {
   margin: 0;
   padding: 0;
   font-family: consolas;
 }
-section
-{
+section {
   padding: 50px;
   background: #000;
 }
-section h2
-{
+section h2 {
   font-size: 1.2em;
   color: #fff;
 }
-section p 
-{
+section p {
   font-size: 1.2em;
   color: #fff;
 }
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
   width: 0;
 }
-#scrollPath
-{
+#scrollPath {
   position: fixed;
   top: 0;
   right: 0;
   width: 10px;
   height: 100%;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
-#progressbar
-{
+#progressbar {
   position: fixed;
   top: 0;
   right: 0;
   width: 10px;
   height: 100%;
-  background: linear-gradient(to top, #008aff,#00ffe7);
+  background: linear-gradient(to top, #008aff, #00ffe7);
   animation: animate 5s linear infinite;
 }
-@keyframes animate
-{
-  0%,100%
-  {
+@keyframes animate {
+  0%,
+  100% {
     filter: hue-rotate(0deg);
   }
-  50%
-  {
+  50% {
     filter: hue-rotate(360deg);
   }
 }
-#progressbar:before
-{
-  content: '';
+#progressbar:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #008aff,#00ffe7);
+  background: linear-gradient(to top, #008aff, #00ffe7);
   filter: blur(30px);
 }
-#progressbar:after
-{
-  content: '';
+#progressbar:after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #008aff,#00ffe7);
+  background: linear-gradient(to top, #008aff, #00ffe7);
   filter: blur(30px);
 }
 
@@ -294,12 +295,12 @@ a:visited {
 }
 
 a:hover {
-  background: linear-gradient(to top, #008aff,#00ffe7);
+  background: linear-gradient(to top, #008aff, #00ffe7);
   animation: animate 5s linear infinite;
   color: black;
-  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
@@ -310,7 +311,7 @@ a:active {
 /*aligning text directly beneath an image */
 
 figure {
-  display:inline-block;
+  display: inline-block;
 }
 
 figcaption {
