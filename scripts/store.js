@@ -6,17 +6,20 @@ function getInput() {
     while (sent) {
         var input = prompt('Give a number 1 through 6. Type 0 to exit.');
 
+        if (images.length < input) {
+            alert("WOAH! Calm down their slick! We don't have that many items in our store.");
+            continue;
+        }
+
         if (input === stop) {
             console.log("Received the stop input, just showing the user the site.")
             sent = false;
             break;
         }
-        else {
-            if (!isNaN(input) && images.length >= input) {
-                showImage(input);
-            }
-            sent = false;
+        else if (!isNaN(input) && images.length >= input) {
+            showImage(input);
         }
+        sent = false;
     }
 
 }
